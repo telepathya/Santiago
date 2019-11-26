@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
+    
     <meta charset="UTF-8">
 
     <meta property="og:img" content="http://post.phinf.naver.net/MjAxODEwMjVfMjA4/MDAxNTQwNDU1MTA2MTQ1.BVyJN67vR5CjLVboTJ047Ohyx_hJQbfTBwA48jhPKHgg.omc76hVGnPLqbls7JLCUhAvq_VsXgxSyaqXeqPT-tjMg.JPEG/Iq295dSuwmDeCXgNI1GCoHv3mQxI.jpg">
 
-	<meta property="og:title" content=" 걸어요 산티아고 순례길 프랑스길 지도&숙소">
+    <meta property="og:title" content=" 걸어요 산티아고 순례길 프랑스길 지도&숙소">
 
-	<meta property="og:description" content="산티아고 순례길 탐방은 단순한 휴가가 아니라 삶에 대한 시선을 되짚어볼 수 있는 중요한 전환점의 계기가 될 수 있습니다.">
+    <meta property="og:description" content="산티아고 순례길 탐방은 단순한 휴가가 아니라 삶에 대한 시선을 되짚어볼 수 있는 중요한 전환점의 계기가 될 수 있습니다.">
 
-    <title> 산티아고 순례길 프랑트길 40일 코스 </title>
+    <title> 산티아고 순례길 프랑스길 </title>
     
     <!--구글폰트 -->
 
@@ -22,85 +23,512 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script>
 
-    <!--JavaScript-->
+
+        $('#map_box').hide();
+        $('#map_box').css('dispaly');
+
+
+    </script>
 
     <style>
-    	header{
-    		width: 100%;
-    		height: 450px;
-    		background-image: url(https://www.shoestring.kr/FILES/titieImg/SHT01270/15/01/1421082158252000.jpg);
-    		background-repeat: no-repeat;
-    		background-size: cover;
-    		background-position: 0 -50px;
-    		position: relative;
-    		border-bottom: 7px solid white;
-    	}
-    	.title{
-    		font-size: 50px;
-    		line-height: 350px;
-    		font-weight: bold;
-    		text-align: center;
-    		color: white;
-    	}
-    	.menu{
-    		width: 1200px;
-    		height: 100px;
-    		/*background: red;*/
-    		margin: 0 auto;
-    		position: absolute;
-    		bottom: 0;
-    		left: 355px;
-    	}
-    	.m_btn{
-    		width: 280px;
-    		height: 100px;
-    		background: white;
-    		display: inline-block;
-    		color: black;
-    		line-height: 100px;
-    		text-align: center;
-    		font-size: 25px;
-    		cursor: pointer;
-    	}
-    	.b1{
-    		margin-right: 20px;
-    	}
-    	.b2{
-    		margin-right: 20px;
-    	}
-    	.b3{
-    		margin-right: 20px;
-    	}
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    li{ list-style: none;}
+    a{
+        text-decoration: none;
+        color: black;}
+    body{
+        font-family: 'Noto Sans KR', sans-serif;
+        background: rgb(244, 242, 234);
+    }
 
-    	main{
-    		width: 100%;
-    		height: 200vh;
-    		background: lightgray;
-    	}
-    	.box{
-    		width: 1195px;
-    		height: 100vh;
-    		background: white;
-    		margin: 0 auto;
-    	}
-	</style>
+    /* header 내용 */
+    header{
+        width: 100%;
+        height: 700px;
+        background-image: url("img/bbanner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 -50px;
+    }
+    .header_contents{
+        width: 1150px;
+        height: 70px;
+        /* background: olive; */
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .name{
+        width: 300px;
+        height: 50px;
+        background-image: url("https://postfiles.pstatic.net/MjAxOTExMjVfODYg/MDAxNTc0Njg5Mjg4ODI3.yzLgPrlg6NgSUmHHA2EX21XDcUnqBBiC26oRNHwphZIg.UY_ukj_AkiYEuYns6Bb57W04P4PZ_IjvnvFEmrjaHB8g.PNG.telepathya/santiago_logo.png?type=w580");
+        background-repeat: no-repeat;
+        background-size: 50px;
+        margin-top: 10px;
+    }
+    .name p{
+        font-size: 24px;
+        line-height: 45px;
+        font-weight: 600;
+        margin-left: 70px;
+        letter-spacing: -1px;
+    }
+    .nav{
+        width: 300px;
+        height: 50px;
+        /* background: orchid; */
+        margin-top: 10px;
+        margin-left: 840px;
+    }
+    .nav_img{
+        width: 50px;
+        height: 25px;
+        background-image: url("https://postfiles.pstatic.net/MjAxOTExMjVfMjM1/MDAxNTc0Njg5MzAwODQ4.GzVsvS6PvVkzcjXrjHw4ZntcOfHnGYmsCd_yuYCIDwIg.j3SEHYZhR8xBhuuD-XwpLqIAwnOp25mpzeWuGR6y1uAg.PNG.telepathya/santiago_arrow.png?type=w580");
+        background-repeat: no-repeat;
+        background-size: auto 25px;
+        margin: 0 0 0 10px;
+    }
+    li{
+        font-size: 19px;
+        font-weight: bolder;
+        letter-spacing: -1px;
+        display: inline-block;
+        line-height: 55px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .title{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 320px;
+        text-align: center;
+        letter-spacing: -1px;
+    }
+    /* main 내용 */
+    main{
+        width: 100%;
+        height: 1000px;
+        /* background: yellowgreen; */
+        margin: 50px auto 0 auto;
+    }
+    .hi{
+        width: 1100px;
+        height: 430px;
+        background: rgb(141, 160, 94);
+        margin: 70px auto 0 auto;
+        padding: 90px;
+        position: relative;
+        z-index: 1000;
+    }
+    .hi p{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .hi span{
+        font-size: 16px;
+    }
+    .hi span:last-child{
+        display: block;
+        margin: 50px 0;
+    }
+    .back_box1{
+        width: 1080px;
+        height: 410px;
+        background: rgb(222, 221, 197);
+        position: relative;
+        top: -390px;
+        left: 23.3%;
+        z-index: 900;
+    }
+
+    .main_map{
+        width: 100%;
+        height: 700px;
+        background-image: url("img/프랑스길-전체지도.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 -200px;
+        position: absolute;
+        top: 1160px;
+        z-index: 1;
+    }
+    .map_btn{
+        width: 100%;
+        height: 700px;
+        /* background: red; */
+        position: relative;
+    }
+    .m_btn{
+        width: 16px;
+        height: 16px;
+        border: 2px solid white;
+        border-radius: 8px;
+        background: rgb(44, 71, 62);
+        position: absolute;
+        cursor: pointer;
+        user-select: none;
+    }
+    .b1{
+        top: 248.5px;
+        right: 189px;
+    }
+    .b2{
+        top: 290px;
+        right: 212px;
+    }
+    .b3{
+        top: 312px;
+        right: 241px;
+    }
+    .b4{
+        top: 339px;
+        right: 272px;
+    }
+    .b5{
+        top: 377px;
+        right: 303px;
+    }
+    .b6{
+        top: 384px;
+        right: 348px;
+    }
+    .b7{
+        top: 405px;
+        right: 378px;
+    }
+    .b8{
+        top: 433px;
+        right: 432px;
+    }
+    .b9{
+        top: 452px;
+        right: 461px;
+    }
+    .b10{
+        top: 448px;
+        right: 515px;
+    }
+    .b11{
+        top: 444px;
+        right: 559px;
+    }
+    .b12{
+        top: 455px;
+        right: 596px;
+    }
+    .b13{
+        top: 464px;
+        right: 662px;
+    }
+    .b14{
+        top: 474px;
+        right: 730px;
+    }
+    .b15{
+        top: 483px;
+        right: 775px;
+    }
+    .b16{
+        top: 470px;
+        right: 832px;
+    }
+    .b17{
+        top: 467px;
+        right: 882px;
+    }
+    .b18{
+        top: 459px;
+        right: 928px;
+    }
+    .b19{
+        top: 439px;
+        right: 958px;
+    }
+    .b20{
+        top: 422px;
+        right: 1003px;
+    }
+    .b21{
+        top: 398px;
+        right: 1032px;
+    }
+    .b22{
+        top: 424px;
+        right: 1076px;
+    }
+    .b23{
+        top: 433px;
+        right: 1133px;
+    }
+    .b24{
+        top: 427px;
+        right: 1182px;
+    }
+    .b25{
+        top: 412px;
+        right: 1231px;
+    }
+    .b26{
+        top: 394px;
+        right: 1269px;
+    }
+    .b27{
+        top: 373px;
+        right: 1315px;
+    }
+    .b28{
+        top: 355px;
+        right: 1353px;
+    }
+    .b29{
+        top: 353px;
+        right: 1394px;
+    }
+    .b30{
+        top: 341px;
+        right: 1441px;
+    }
+    .b31{
+        top: 323px;
+        right: 1479px;
+    }
+    .b32{
+        top: 311px;
+        right: 1517px;
+    }
+    .b33{
+        top: 315px;
+        right: 1572px;
+    }
+    .b34{
+        top: 320px;
+        right: 1613px;
+    }
+    .b35{
+        top: 306px;
+        right: 1720px;
+    }
+            
+    .map_contents{
+        width: 1550px;
+        height: 700px;
+        margin: 50px auto 0 auto;
+    }
+    /* .m_c_tit{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 10px 230px;
+    } */
+    .m_c_con{
+        width: 1150px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        z-index: 700;
+    }
+    .con_box1{
+        width: 750px;
+        height: 500px;
+        background: rgb(222, 221, 197);
+        margin-right: 20px;
+        padding: 50px;
+    }
+    .b1_sub{
+        font-size: 26px;
+        font-weight: bolder;
+        color: rgb(133, 133, 133);
+        display: inline-block;
+    }
+    .b1_tit{
+        font-size: 22px;
+        font-weight: bolder;
+        margin: 0 0 7px 10px;
+        display: inline-block;
+        letter-spacing: -1px;
+    }
+    .b1_eng{
+        font-size: 20px;
+        letter-spacing: -0.7px;
+        color: rgb(65, 65, 65);
+        margin: 0 0 7px 93px;
+        display: block;
+    }
+    .b1_km{
+        font-size: 20px;
+        letter-spacing: -1px;
+        color: rgb(65, 65, 65);
+        margin: 0 0 0 93px;
+        display: inline-block;
+    }
+    .b1_map{
+        width: 650px;
+        height: 230px;
+        margin-top: 55px;
+        background-image: url("https://postfiles.pstatic.net/MjAxOTExMjRfMjAw/MDAxNTc0NjAyNzIxODM5.yeHhl0Y-rUrXMmilGquXI4xRr9SX3kVAloVdeF1-S5Ag.N1e607l2m6bE7iM4KEiH-tHDdTBOZYLGLlTUbWrVzlkg.JPEG.telepathya/Day_1.JPG?type=w580");
+        background-repeat: no-repeat;
+        background-size: 650px;
+        position: relative;
+    }
+    input{
+        width: 110px;
+        height: 45px;
+        background: rgb(141, 160, 94);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+        position: absolute;
+        bottom: 340px;
+        right: 10px;
+    }
+    .b1:hover{
+
+    }
+    .con_box2{
+        width: 380px;
+        height: 500px;
+        background: rgb(222, 221, 197);
+        padding: 50px;
+    }
+    .back_box2{
+        width: 1130px;
+        height: 485px;
+        background: rgb(141, 160, 94);
+        position: absolute;
+        z-index: 1;
+        top: 785px;
+        left: 415px;
+    }
+    .b2_hotel{
+        margin: 45px 0 0 20px;
+        flex-direction: row;
+        position: relative;
+    }
+    .b2_hotel:nth-child(3){
+        margin-top: 70px;
+    }
+    .b2_hotel:nth-child(4){
+        margin-top: 70px;
+    }
+    .b2_tit{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 7px;
+        letter-spacing: -1px;
+    }
+    </style>
+    
+    <script>
+
+    function(){$(m_btn b2).click(function(){$(m_c_con).css(hide)})}
+
+    </script>
 
 </head>
-
 <body>
-	<header>
-		<div class="title">산티아고 순례길</div>
-		<div class="menu">
-			<div class="m_btn b1">상세정보</div>
-			<div class="m_btn b2">코스</div>
-			<div class="m_btn b3">지도</div>
-			<div class="m_btn b4">숙소</div>
-		</div>
-	</header>
-	<main>
-		<div class="box"></div>
-	</main>
-	
+    <header>
+        <div class="header_contents">
+            <div class="name"><p>Santiago</p></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#map_navi">코스 보기</a></li>
+                    <a href="#map_navi"><li class="nav_img"></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="title">스페인 산티아고 순례길 프랑스길</div>
+    </header>
+    <main>
+        <div class="hi">
+            <p>올라-!</p>
+            <span>스페인을 대표하는 까미노 데 산티아고 순례길 탐방은 단순 휴가가 아니라 삶에 대한 시선을 되짚어볼 수 있는 중요한 전환점의 계기가 될 수 있다고 생각합니다.</span>
+            <span>순례자 지윤</span>
+        </div>
+        <div class="back_box1"></div>
+        <div class="main_map" id="map_navi">
+            <div class="map_btn">
+                <div></div>
+                <button class="m_btn b1"></button>
+                <button class="m_btn b2"></button>
+                <button class="m_btn b3"></button>
+                <button class="m_btn b4"></button>
+                <button class="m_btn b5"></button>
+                <button class="m_btn b6"></button>
+                <button class="m_btn b7"></button>
+                <button class="m_btn b8"></button>
+                <button class="m_btn b9"></button>
+                <button class="m_btn b10"></button>
+                <button class="m_btn b11"></button>
+                <button class="m_btn b12"></button>
+                <button class="m_btn b13"></button>
+                <button class="m_btn b14"></button>
+                <button class="m_btn b15"></button>
+                <button class="m_btn b16"></button>
+                <button class="m_btn b17"></button>
+                <button class="m_btn b18"></button>
+                <button class="m_btn b19"></button>
+                <button class="m_btn b20"></button>
+                <button class="m_btn b21"></button>
+                <button class="m_btn b22"></button>
+                <button class="m_btn b23"></button>
+                <button class="m_btn b24"></button>
+                <button class="m_btn b25"></button>
+                <button class="m_btn b26"></button>
+                <button class="m_btn b27"></button>
+                <button class="m_btn b28"></button>
+                <button class="m_btn b29"></button>
+                <button class="m_btn b30"></button>
+                <button class="m_btn b31"></button>
+                <button class="m_btn b32"></button>
+                <button class="m_btn b33"></button>
+                <button class="m_btn b34"></button>
+                <button class="m_btn b35"></button>
+            </div>
+            <div class="map_contents">
+                <div class="m_c_con">
+                    <div class="con_box1">
+                        <div class="b1_con">
+                            <p class="b1_sub">1.DAY</p>
+                            <p class="b1_tit">생장피에드포트 → 론세스바예스</p>
+                            <p class="b1_eng">St.jean pied de port → Roncesvalles</p>
+                            <p class="b1_km"> 누적거리 26km</p>
+                        </div>
+                        <div class="b1_map">
+                            <input type="button" onclick="location.href='https://postfiles.pstatic.net/MjAxOTExMjRfMjAw/MDAxNTc0NjAyNzIxODM5.yeHhl0Y-rUrXMmilGquXI4xRr9SX3kVAloVdeF1-S5Ag.N1e607l2m6bE7iM4KEiH-tHDdTBOZYLGLlTUbWrVzlkg.JPEG.telepathya/Day_1.JPG?type=w580'"value="지도 다운로드">
+                            <div class="n_btn"></div>
+                        </div>
+                    </div>
+                    <div class="con_box2">
+                        <div class="b2_title">
+                            <p class="b1_sub">1.DAY</p>
+                            <p class="b1_tit">알베르게</p>
+                        </div>
+                        <div class="b2_hotel h1">
+                            <p class="b2_tit">생장피드포트 순례호스텔</p>
+                            <p style="font-size:16px">도미토리 10‎€</p>
+                            <p style="font-size:16px">싱글 룸 30€</p>
+                        </div>
+                        <div class="b2_hotel h2">
+                            <p class="b2_tit">기테 데타 페 베이 라리</p>
+                            <p style="font-size:16px">공용 도미토리 33€</p>
+                            <p style="font-size:16px">하프보드</p>
+                        </div>
+                        <div class="b2_hotel h3">
+                            <p class="b2_tit">Accueil Paroissial Kaserna 피난처</p>
+                            <p style="font-size:16px">공용 도미토리 15~20€</p>
+                            <p style="font-size:16px">하프보드</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="back_box2"></div>
+            </div>
+        </div>
+    </main>
 </body>
+</html>
 
