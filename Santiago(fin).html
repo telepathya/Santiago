@@ -1,0 +1,2154 @@
+<html>
+<head>
+    <style>
+    *{ margin: 0; padding: 0; box-sizing: border-box;}
+    li{ list-style: none; }
+    header{
+        /* width: 100%; */
+        height: 1hv;
+    }
+    .h_container{
+        width: 1350px;
+        height: 800px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .h_logo{
+        width: 130px;
+        height: 150px;
+        background-image: url("img/santiago_logo2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-top: 70px;
+    }
+    .h_img{
+        width: 1100px;
+        height: 500px;
+        background-image: url("img/bbanner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 30px;
+        top: 70px;
+    }
+    .h_tit{
+        font-size: 80px;
+        font-weight: bolder;
+        letter-spacing: -3px;
+        display: block;
+        position: absolute;
+        left: -45px;
+        top: 250px;
+    }
+    .h_con{
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        position: absolute;
+        left: -45px;
+        top: 340px;
+    }
+    .h_con2{
+        font-size: 16px;
+        letter-spacing: -1px;
+        position: absolute;
+        left: 400px;
+        top: 380px;
+    }
+    .h_go{
+        font-size: 40px;
+        font-weight: bolder;
+        letter-spacing: -1px;
+        display: block;
+        position: absolute;
+        left: -45px;
+        top: 540px;
+    }
+    .h_arrow{
+        width: 120px;
+        height: 30px;
+        background-image: url("img/arrows.jpg");
+        background-repeat: no-repeat;
+        background-size: 120px;
+        position: absolute;
+        left: 250px;
+        top: 625px;
+    }
+
+    /* main 내용 */
+    .main_map{
+        width: 100%;
+        height: 650px;
+        background: rgb(241, 245, 220);
+    }
+    .btns{
+        width: 1519px;
+        height: 650px;
+        margin: 0 auto;
+        background-image: url("img/main_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -135px;
+        position: relative;
+    }
+    .btn_con{
+        width: 30px;
+        height: 30px;
+        background-image: url("img/santiago_logo.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 85%;
+        left: 11.5%;
+        z-index: 800;
+    }
+    .btn_con a{
+        width: 300px;
+        font-weight: bold;
+        color: rgb(66, 66, 66);
+        position: absolute;
+        top: 10%;
+        left: 130%;
+        z-index: 800;
+    }
+    .btn{
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        background: rgb(44, 71, 62);
+        position: absolute;
+        cursor: pointer;
+        user-select: none;
+    }
+    .btn:hover{
+        background: rgb(255, 208, 0);
+        border: 2px solid rgb(255, 255, 255)5);
+    }
+    .b1{
+        top: 35%;
+        right: 10%;
+    }
+    .b2{
+        top: 38.2%;
+        right: 10.8%;
+    }
+    .b3{
+        top: 41%;
+        right: 12.2%;
+    }
+    .b4{
+        top: 44.3%;
+        right: 14%;
+    }
+    
+    .b5{
+        top: 49.7%;
+        right: 16%;
+    }
+    .b6{
+        top: 50.4%;
+        right: 18.2%;
+    }
+    .b8{
+        top: 53.2%;
+        right: 19.9%;
+    }
+    .b9{
+        top: 57.2%;
+        right: 23%;
+    }
+    .b10{
+        top: 58.7%;
+        right: 24.3%;
+    }
+    .b11{
+        top: 58.2%;
+        right: 27.5%;
+    }
+    .b12{
+        top: 57.8%;
+        right: 29.3%;
+    }
+    .b13{
+        top: 57.8%;
+        right: 29.3%;
+    }
+    .b14{
+        top: 59.5%;
+        right: 31.2%;
+    }    
+    .b16{
+        top: 60.4%;
+        right: 34.55%;
+    }
+    .b17{
+        top: 61.4%;
+        right: 37.7%;
+    }
+    .b18{
+        top: 62.7%;
+        right: 41%;
+    }
+    .b19{
+        top: 61%;
+        right: 43.9%;
+    }
+    .b20{
+        top: 61.1%;
+        right: 46.2%;
+    }
+    .b21{
+        top: 60.5%;
+        right: 48%;
+    }
+    .b22{
+        top: 57.7%;
+        right: 50%;
+    }
+    .b23{
+        top: 55.5%;
+        right: 52.5%;
+    }
+    .b24{
+        top: 52.2%;
+        right: 54.2%;
+    }
+    .b25{
+        top: 55.4%;
+        right: 56.5%;
+    }
+    .b26{
+        top: 56.7%;
+        right: 59%;
+    }
+    .b27{
+        top: 55.8%;
+        right: 62.2%;
+    }
+    .b28{
+        top: 53.5%;
+        right: 65%;
+    }
+    .b29{
+        top: 50.8%;
+        right: 67.5%;
+    }
+    .b30{
+        top: 46.9%;
+        right: 71.2%;
+    }
+    .b30_1{
+        top: 49%;
+        right: 69.1%;
+    }
+    .b31{
+        top: 47%;
+        right: 72.8%;
+    }
+    .b32{
+        top: 45.2%;
+        right: 75.8%;
+    }
+    .b32_2{
+        top: 43.1%;
+        right: 77.5%;
+    }
+    .b33{
+        top: 41.7%;
+        right: 79%;
+    }
+    .b34{
+        top: 42%;
+        right: 82%;
+    }
+    .b35{
+        top: 42.8%;
+        right: 84.2%;
+    }
+    .b35_1{
+        top: 42.3%;
+        right: 85.7%;
+    }
+    .b35_2{
+        top: 41.5%;
+        right: 87%;
+    }
+    .b35_3{
+        top: 40.2%;
+        right: 88.8%;
+    }
+    .b36{
+        top: 41.5%;
+        right: 90.2%;
+    }
+
+
+    .box{
+        width: 1350px;
+        margin: 110px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .b_day{
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        position: absolute;
+        right: 35px;
+        top: -20px;
+    }
+    .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/1day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: relative;
+    }
+    .map_btn{
+        width: 100px;
+        height: 40px;
+        background: rgb(44, 71, 62);
+        color: white;
+        border:0px solid rgb(44, 71, 62);
+        font-weight: bolder;
+        transition:all .5s ease;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 900;
+        cursor: pointer;
+        user-select: none;
+    }
+    .map_btn a{
+        /* font-family:arial; */
+        letter-spacing: -1px;
+        color:#ffffff;
+        line-height:40px;
+        transition:all .5s ease;
+        z-index:2;
+        position:relative;
+    }
+    .eff-7{
+        width:100px;
+        height:40px;
+        border:0px solid #ffffff;
+        position:absolute;
+        transition:all .5s ease;
+        z-index:1;
+        box-sizing:border-box;
+    }
+    .map_btn:hover a{
+        color:rgb(44, 71, 62);
+    }
+    .map_btn:hover{
+        background:#ffffff;
+        border:1px solid rgb(44, 71, 62);
+    }
+
+    .map_btn2{
+        width: 100px;
+        height: 40px;
+        background: rgb(44, 71, 62);
+        color: white;
+        border:0px solid rgb(44, 71, 62);
+        font-weight: bolder;
+        letter-spacing: -1px;
+        position: absolute;
+        bottom: -380px;
+        right: 20px;
+        z-index: 700;
+    }
+    .map_btn2 a{
+        /* font-family:arial; */
+        letter-spacing: -1px;
+        color:#ffffff;
+        line-height:40px;
+        transition:all .5s ease;
+        z-index:2;
+        position:relative;
+    }
+    .eff-7{
+        width:100px;
+        height:40px;
+        border:0px solid #ffffff;
+        position:absolute;
+        transition:all .5s ease;
+        z-index:1;
+        box-sizing:border-box;
+    }
+    .map_btn2:hover a{
+        color:rgb(44, 71, 62);
+    }
+    .map_btn2:hover{
+        background:#ffffff;
+        border:1px solid rgb(44, 71, 62);
+    }
+    .back_map{
+        width: 1300px;
+        height: 410px;
+        border: 2px solid rgb(181, 184, 175);
+        position: absolute;
+        right: 0px;
+        top: 90px;
+        z-index: 1;
+    }
+    .b_con{
+        width: 200px;
+        height: 150px;
+        /* background: yellowgreen; */
+        position: absolute;
+        right: 25px;
+        top: 130px;
+    }
+    .kor{
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        display: block;
+    }
+    .eng{
+        font-size: 18px;
+        letter-spacing: -1px;
+        margin: 10px 0 0 0;
+        display: block;
+    }
+    .km{
+        letter-spacing: -1px;
+        margin: 10px 0 0 0;
+    }
+    .b_al{
+        width: 200px;
+        height: 175px;
+        /* background: yellowgreen; */
+        position: absolute;
+        right: 25px;
+        top: 270px;
+    }
+    .b_all{
+        margin: 37px 0 0 0;
+    }
+
+    .box2{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .b_day2{
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        position: absolute;
+        left: 35px;
+        top: -20px;
+    }
+    .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/2day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .back_map2{
+        width: 1300px;
+        height: 410px;
+        border: 2px solid rgb(181, 184, 175);
+        position: absolute;
+        left: 0;
+        top: 90px;
+        z-index: 1;
+    }
+    .b_con2{
+        width: 200px;
+        height: 150px;
+        /* background: yellowgreen; */
+        position: absolute;
+        left: 25px;
+        top: 130px;
+    }
+    .kor2{
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        display: block;
+    }
+    .eng2{
+        font-size: 18px;
+        letter-spacing: -1px;
+        margin: 10px 0 0 0;
+        display: block;
+    }
+    .km2{
+        letter-spacing: -1px;
+        margin: 10px 0 0 0;
+    }
+    .b_al2{
+        width: 200px;
+        height: 175px;
+        /* background: yellowgreen; */
+        position: absolute;
+        left: 25px;
+        top: 270px;
+    }
+    .b_all2{
+        margin: 37px 0 0 0;
+    }
+    .box3{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box3 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/3day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 900;
+    }
+    .box4{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box4 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/4day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box5{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box5 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/5day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box6{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box6 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/6day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box7{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box7 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/7day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box8{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box8 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/8day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box9{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box9 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/9day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box10{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box10 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/10day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box11{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box11 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/11day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box12{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box12 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/12day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box13{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box13 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/13day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box14{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box14 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/14day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box15{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box15 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/15day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box16{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box16 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/16day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box17{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box17 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/17day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box18{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box18 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/18day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box19{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box19 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/19day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box20{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box20 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/20day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box21{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box21 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/21day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box22{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box22 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/22day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box23{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box23 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/23day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box24{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box24 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/24day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box25{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box25 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/25day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box26{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box26 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/26day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box27{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box27 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/27day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box28{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box28 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/28day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box29{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box29 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/29day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box30{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box30 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/30day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box31{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box31 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/31day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box32{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box32 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/32day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box33{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box33 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/33day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box34{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box34 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/34day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box35{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box35 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/35day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box36{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box36 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/36day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .box37{
+        width: 1350px;
+        margin: 600px auto 0 auto;
+        /* background: red; */
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box37 .map{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/35day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 700;
+    }
+    .box38{
+        width: 1350px;
+        margin: 200px auto 0 auto;
+        padding: 55px 0 0 0;
+        position: relative;
+    }
+    .box38 .map2{
+        width: 1100px;
+        height: 400px;
+        background-image: url("img/36day_map.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 500;
+        position: absolute;
+        left: 250px;
+        top: 55px;
+    }
+    .fixbutton{
+        width: 50px;
+        height: 50px;
+        background: gray;
+        position: fixed;
+        bottom: 250px;
+        right: 100px;
+        z-index: 900;
+
+    }
+    
+
+    footer{
+        height: 80px;
+        background: rgb(241, 245, 220);
+        margin: 550px 0 0 0;
+    }
+    
+    html, body {
+  height: 100%;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h_button {
+  width: 60px;
+  height: 110px;
+  /* box-shadow: 0px 8px 15px rgba(248, 0, 0, 0); */
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  position: fixed;
+  bottom: 250px;
+  right: 30px;
+  z-index: 900;
+  background:rgb(0, 0, 0, 0);
+  background-image: url("img/santiago_arrow2.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  text-transform: uppercase;
+  /* color: white; */
+  border:0px solid #34585e;
+  font-weight: bolder;
+  transition:all .5s ease;
+  z-index: 900; 
+  user-select: none;
+}
+
+.h_button:hover {
+  background-color:rgb(0, 0, 0, 0);
+  color: #34585e;
+  /* border: 1px solid #34585e; */
+  transform: translateY(-30px);
+}
+
+     </style>
+</head>
+<body>
+    <a href="#move_top"><button class="h_button"></button></a>
+    <header>
+        <div class="h_container">
+            <div class="h_logo"></div>
+            <div class="h_img">
+                <span class="h_tit">Welcome</span>
+                <span class="h_con">스페인 산티아고 순례길</span>
+                <span class="h_con2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in sint animi error, veritatis fugit esse odio recusandae impedit rem soluta sit maiores expedita. Esse saepe reiciendis suscipit excepturi pariatur quae officia vero vel ipsum doloribus nihil, veniam cum, voluptates quod dicta iure, porro provident quis! Accusantium quod debitis quia!</span>
+                <span class="h_go">Go</span>
+            </div>
+            <div class="h_arrow"></div>
+        </div>
+    </header>
+    <main>
+        <div class="main_map" id="move_top">
+            <div class="btn_con">
+                <a>버튼을 누르면 해당 지도로 이동합니다.</a></div>
+            <div class="btns">
+                <a href="#btn1"><button class="btn b1"></button></a>
+                <a href="#btn2"><button class="btn b2"></button></a>
+                <a href="#btn3"><button class="btn b3"></button></a>
+                <a href="#btn4"><button class="btn b4"></button></a>                
+                <a href="#btn5"><button class="btn b5"></button></a>
+                <a href="#btn6"><button class="btn b6"></button></a>
+                <a href="#btn7"><button class="btn b8"></button></a>
+                <a href="#btn8"><button class="btn b9"></button></a>
+                <a href="#btn9"><button class="btn b10"></button></a>
+                <a href="#btn10"><button class="btn b11"></button></a>
+                <a href="#btn11"><button class="btn b13"></button></a>
+                <a href="#btn12"><button class="btn b14"></button></a>                
+                <a href="#btn13"><button class="btn b16"></button></a>
+                <a href="#btn14"><button class="btn b17"></button></a>
+                <a href="#btn15"><button class="btn b18"></button></a>
+                <a href="#btn16"><button class="btn b19"></button></a>
+                <a href="#btn17"><button class="btn b20"></button></a>
+                <a href="#btn18"><button class="btn b21"></button></a>
+                <a href="#btn19"><button class="btn b22"></button></a>
+                <a href="#btn20"><button class="btn b23"></button></a>
+                <a href="#btn21"><button class="btn b24"></button></a>
+                <a href="#btn22"><button class="btn b25"></button></a>
+                <a href="#btn23"><button class="btn b26"></button></a>
+                <a href="#btn24"><button class="btn b27"></button></a>
+                <a href="#btn25"><button class="btn b28"></button></a>
+                <a href="#btn26"><button class="btn b29"></button></a>
+                <a href="#btn27"><button class="btn b30_1"></button></a>
+                <a href="#btn28"><button class="btn b30"></button></a>
+                <a href="#btn29"><button class="btn b31"></button></a>
+                <a href="#btn30"><button class="btn b32"></button></a>
+                <a href="#btn31"><button class="btn b32_2"></button></a>
+                <a href="#btn32"><button class="btn b33"></button></a>
+                <a href="#btn33"><button class="btn b34"></button></a>
+                <a href="#btn34"><button class="btn b35"></button></a>
+                <a href="#btn35"><button class="btn b35_1"></button></a>
+                <a href="#btn36"><button class="btn b35_2"></button></a>
+                <a href="#btn37"><button class="btn b35_3"></button></a>
+                <a href="#btn38"><button class="btn b36"></button></a>
+            </div>
+        </div>
+        <div class="box" id="btn1">
+            <div class="b_day">1 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn"><a>지도 다운로드</a></button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box2" id="btn2">
+            <div class="b_day2">2 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2"><a>지도 다운로드</a></button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box3" id="btn3">
+            <div class="b_day">3 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn"><a>지도 다운로드</a></button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box4" id="btn4">
+            <div class="b_day2">4 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2"><a>지도 다운로드</a></button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box5" id="btn5">
+            <div class="b_day">5 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box6" id="btn6">
+            <div class="b_day2">6 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box7" id="btn7">
+            <div class="b_day">7 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box8" id="btn8">
+            <div class="b_day2">8 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box9" id="btn9">
+            <div class="b_day">9 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box10" id="btn10">
+            <div class="b_day2">10 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box11" id="btn11">
+            <div class="b_day">11 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box12" id="btn12">
+            <div class="b_day2">12 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box13" id="btn13">
+            <div class="b_day">13 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box14" id="btn14">
+            <div class="b_day2">14 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box15" id="btn15">
+            <div class="b_day">15 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box16" id="btn16">
+            <div class="b_day2">16 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box17" id="btn17">
+            <div class="b_day">17 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box18" id="btn18">
+            <div class="b_day2">18 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box19" id="btn19">
+            <div class="b_day">19 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box20" id="btn20">
+            <div class="b_day2">20 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box21" id="btn21">
+            <div class="b_day">21 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box22" id="btn22">
+            <div class="b_day2">22 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box23" id="btn23">
+            <div class="b_day">23 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box24" id="btn24">
+            <div class="b_day2">24 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box25" id="btn25">
+            <div class="b_day">25 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box26" id="btn26">
+            <div class="b_day2">26 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box27" id="btn27">
+            <div class="b_day">27 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box28" id="btn28">
+            <div class="b_day2">28 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box29" id="btn29">
+            <div class="b_day">29 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box30" id="btn30">
+            <div class="b_day2">30 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box31" id="btn31">
+            <div class="b_day">31 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box32" id="btn32">
+            <div class="b_day2">32 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box33" id="btn33">
+            <div class="b_day">33 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box34" id="btn34">
+            <div class="b_day2">34 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box35" id="btn35">
+            <div class="b_day">35 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box36" id="btn36">
+            <div class="b_day2">36 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box37" id="btn37">
+            <div class="b_day">37 Day</div>
+            <div class="map"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn">지도 다운로드</button></a>
+            <div class="back_map"></div>
+            <div class="b_con">
+                <span class="kor">생장피에드포트 → 론세스바예스</span>
+                <span class="eng">St.jean pied de port → Ron cesvalles</span>
+                <span class="km">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al">
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+                <div class="b_all">
+                    <span class="al">알베르게이름이요</span>
+                    <span class="price">금액이요</span>
+                </div>
+            </div>
+        </div>
+        <div class="box38" id="btn38">
+            <div class="b_day2">38 Day</div>
+            <div class="map2"></div>
+            <a href="img/1day_map.jpg" download><button class="map_btn2">지도 다운로드</button></a>
+            <div class="back_map2"></div>
+            <div class="b_con2">
+                <span class="kor2">생장피에드포트 → 론세스바예스</span>
+                <span class="eng2">St.jean pied de port → Ron cesvalles</span>
+                <span class="km2">마을간 누계거리 26km</span>
+            </div>
+            <div class="b_al2">
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+                <div class="b_all2">
+                    <span class="al2">알베르게이름이요</span>
+                    <span class="price2">금액이요</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
